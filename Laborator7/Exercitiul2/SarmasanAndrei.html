@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Pagina de prezentare 
+        </title>
+        <link rel="stylesheet" href="Style.css">
+        <script>
+            function viitor(){
+                document.getElementById("Nume").innerHTML = "Dr. Ing. Sarmasan Andrei";
+                document.getElementById("poza").src = "poza2.jpg";
+                document.getElementById("poza").style.width = " 300px";
+                document.getElementById("poza").style.opacity = "50%";
+                document.getElementById("poza").style.border = "10px";
+                document.body.style.backgroundColor = " Blue";
+                document.getElementById("div").style.backgroundColor = " Blue";
+                document.getElementById("p").style.fontFamily = "Lucida Console, Courier, monospace";
+                
+                var tabel = document.getElementById("tabel");
+                tabel.rows[0].cells[0].innerHTML = "OSUT Cluj";
+                tabel.rows[0].cells[1].innerHTML = " Departamentul financiar";
+                tabel.rows[2].cells[1].innerHTML = "UTCN";
+                tabel.rows[2].cells[1].innerHTML = "Vorbitul in public ";
+                tabel.rows[3].cells[0].innerHTML = "Work and Travel USA";
+                tabel.rows[3].cells[1].innerHTML = " Anul II"; 
+        
+            }
+
+            function Varsta(){
+                    var azi = new Date;
+                    var varstainani;
+
+                    var anNastere = document.getElementById("ani").innerHTML;
+                    var ancurent = azi.getFullYear();
+
+                    varstainani = ancurent - anNastere;
+
+                    document.getElementById("ani").innerHTML = varstainani;
+
+            }
+            </script>
+
+
+        
+    </head>
+    
+    <body>
+        <div id="div">
+
+        
+           <h2 id="Nume">Sărmășan Andrei Florin</h2>
+
+             <p onmouseover=Varsta() id="ani" >2002</p>
+        
+       
+        <img id="poza" src="poza.jpg">
+        <p>
+            <b>Data nașterii: </b> 16/04/2002
+        </p>
+
+        
+        <p id="p">
+            <b>Adresa de email: </b>  sarmasan.andrei02@gmail.com
+        </p>
+        <p id="p">
+            <b>Număr de telefon: </b>  0773xxxxxx
+        </p>
+        
+        <p id="p">
+            
+           <b id="p" >Citat:</b> „Educatia nu este pregatira pentru viata, educatia este viata insasi.”
+        </p>
+
+        <table id="tabel">
+            <tr>
+                <td>
+                    Analiza matematica
+                </td>
+                <td>
+                    <a href="file:///C:/Users/Andrei/Downloads/01.pdf">file:///C:/Users/Andrei/Downloads/01.pdf</a>
+                </td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td>
+                    Informatica aplicata
+                </td>
+                <td>
+                    <a href="file:///C:/Users/Andrei/Downloads/06.pdf">file:///C:/Users/Andrei/Downloads/06.pdf</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Programarea calculatoarelor - Limbaje
+                </td>
+                <td>
+                    <a href="file:///C:/Users/Andrei/Downloads/04(1).pdf">file:///C:/Users/Andrei/Downloads/04(1).pdf</a>
+                </td>
+                
+
+            </tr>
+
+
+        </table>
+
+        <ul>
+           
+                <h4>
+                    Hobby-uri
+                </h4>
+            
+            <li>
+                Cititul
+            </li>
+            <li>
+                Mașinile
+            </li>
+            <li>
+                Gaming-ul
+            </li>
+        </ul>
+
+    </div>
+    <br>
+    
+        <button type="button" onclick="viitor()">
+            VeziViitor
+        </button>
+   
+   
+    
+    </body>
+
+</html>
